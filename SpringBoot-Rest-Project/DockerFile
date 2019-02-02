@@ -1,0 +1,4 @@
+FROM openjdk:8
+ADD target/docker-3.0.jar docker-3.0.jar
+EXPOSE 8085
+ENTRYPOINT ["java", "-jar", "docker-3.0.jar"] 
