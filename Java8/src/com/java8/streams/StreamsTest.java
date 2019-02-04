@@ -13,7 +13,7 @@ public class StreamsTest {
 		//personList.stream().filter(person -> person.getName().equals("A")).collect(Collectors.toList()).forEach(person -> System.out.println("ID is "+ person.getId()));;
 		//personList.stream().sorted().collect(Collectors.toList()).forEach(System.out::println);
 		personList.stream().sorted(Comparator.comparing(Person::getAge)).forEach(System.out::println);
-		
+		//Lambda expression
 		//personList.forEach(a -> System.out.println(a));
 	}
 	private static List<Person> getPersons() {
