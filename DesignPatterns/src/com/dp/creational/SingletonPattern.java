@@ -2,10 +2,11 @@ package com.dp.creational;
 
 /**
  * @author Suresh Sadanala
- *
  */
 public class SingletonPattern {
-
+	/**
+	 * Singleton summary is available notes under resource folder
+	 */
 	static SingletonPattern singletonObject = new SingletonPattern();// Early instantiation 
 
 	private SingletonPattern() {
