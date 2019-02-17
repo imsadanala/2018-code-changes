@@ -1,0 +1,71 @@
+Deisgn Patterns
+===============
+Solutions are provided commonly occuring problems in the software development world.
+These are classified into 3 types
+ 1. creational - creation of object
+ 2. structural - object wants use other object i.e object composition
+ 3. behavioural - commucation betwn the objects (not composition)
+
+Some of the design patterns that are used in the JDK library are::
+ 	a. Singleton design pattern which is used by Runtime and Calender classes
+	 b. Factory design pattern which is used by Wrapper classes i.e class like Integer.valueOf()
+	 c. Decorator design pattern is used by Wrapper classes
+	 d. Observer design pattern is used by event handling fraweworks like AWT and Swings
+
+A. Creational design pattern
+======================== 
+	1.  Singleton
+	2.  Factory
+ 	3.  Abstract Factory
+ 	4. Builder
+ 	5. prototype
+B. Structural design pattern
+=======================
+	6. Adopter
+ 	7. Composite
+	8. Proxy
+ 	9. Fly Weight
+	10. Facade
+	11. Bridge
+	12. Decorator
+C. Behavioural design pattern
+=========================
+	13. Template Method
+	14. Mediator
+	15.  Chain Of Responsibility
+	16. Observer
+	17. Strategy
+	18. Command
+	19. State
+	20.  Visitor
+	21. Iterator
+	22. Interpreter
+	23. Memento
+
+1. Singleton
+--------------------
+	to achieve Singleton pattern, we need a static member, private constructor and static method to return the singleton object.
+		static member: gets the memory only once, and  this member will have the Singleton object
+		private constructor: restricts the instantition of Singleton object  from outside of class
+		static factory method: this method will be called to get the Singlton object globally
+Advantages:
+Only single instance wil be created and reuse it again whenever required.
+Usage:
+Singleton pattern mostly used in multithreaded and DB applications for Logging, cacheing, thread pools, configuration setting etc.
+
+
+
+
+Factory
+Abstract Factory
+Decorator - wrapper to existing class/adding additional functionality i.e. add new fuctionality without altering the existing structure
+Observer
+Builder
+Prototype
+Bridge pattern
+Adapter pattern
+Filter pattern
+Flyweight pattern - will tries to re use similar kind of objects by storing them and creates the new object if there is no match.
+Gang Of Four priniciple(GOF)
+----------------------------
+-> Pefer composition over inheritance
