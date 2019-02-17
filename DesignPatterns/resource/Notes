@@ -54,9 +54,11 @@ Usage:
 Singleton pattern mostly used in multithreaded and DB applications for Logging, cacheing, thread pools, configuration setting etc.
 
 
+2. Factory
+-----------------
+	this pattern allows subclasses to take care of object instantiationn and makes classes loosly coulped.
+Parent class choose the creation of subclasses object.
 
-
-Factory
 Abstract Factory
 Decorator - wrapper to existing class/adding additional functionality i.e. add new fuctionality without altering the existing structure
 Observer
