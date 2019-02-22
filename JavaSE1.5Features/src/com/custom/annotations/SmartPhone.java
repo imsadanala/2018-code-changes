@@ -9,9 +9,11 @@ import java.lang.annotation.Target;
 
 @Inherited
 @Documented
-@Target(ElementType.TYPE)
+@Target({ ElementType.TYPE, ElementType.METHOD, ElementType.CONSTRUCTOR, ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface SmartPhone {
 	double osVersion() default 1.0;
-	String osType() default "andriod lallipop";
+	String osType() default "andriod lallypop";
+	String sendMessage() default "Default messaging";
+	public String buildNumber() default "12345ABC";
 }
