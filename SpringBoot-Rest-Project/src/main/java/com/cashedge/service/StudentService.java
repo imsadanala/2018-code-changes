@@ -40,4 +40,20 @@ public class StudentService {
 	public String insertStudent(Student student) {
 		return studentDao.insertStudent(student);
 	}
+
+	public String partialUpdate(Student student) {
+		if (student != null) {
+			String course = student.getCourse();
+			int id = student.getId();
+			String name = student.getName();
+			if(id < 0) {
+				return "unable to do partial update for this request";
+			}
+			if ((id > 0 && course != null && course.length() > 0) || (name != null && name.length() > 0 && id > 0))
+			{
+				return studentDao.partialUpdate(student);
+			}
+		}
+		return "unable to do partial update for this request";
+	}
 }

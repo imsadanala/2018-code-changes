@@ -16,4 +16,6 @@ public interface StudentDao {
 
 	String insertStudent(Student student);
 
+	String partialUpdate(Student student);
+
 }

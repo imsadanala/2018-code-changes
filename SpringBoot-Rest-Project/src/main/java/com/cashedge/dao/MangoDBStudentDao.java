@@ -45,4 +45,10 @@ public class MangoDBStudentDao implements StudentDao {
 		return null;
 	}
 
+	@Override
+	public String partialUpdate(Student student) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
