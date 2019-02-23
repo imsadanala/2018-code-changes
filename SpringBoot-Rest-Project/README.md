@@ -1,0 +1,1 @@
+StudentApplication is developed by using SpringBoot. This project will do all basic HTTP operations like(GET, PUT, POST, DELETE, PATCH). and this can accessed by using "http://localhost:8085/students"
