@@ -22,6 +22,9 @@ public class FakeStudentDaoImp implements StudentDao {
 				put(1, new Student(1, "ONE", "A"));
 				put(2, new Student(2, "TWO", "B"));
 				put(3, new Student(3, "THREE", "C"));
+				put(4, new Student(4, "FOUR", "D"));
+				put(5, new Student(5, "FIVE", "E"));
+				put(6, new Student(6, "SIX", "F"));
 			}
 		};
 	}
@@ -65,8 +68,7 @@ public class FakeStudentDaoImp implements StudentDao {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see
-	 * com.cashedge.dao.StudentDao#insertStudent(com.cashedge.dao.bean.Student)
+	 * @see com.cashedge.dao.StudentDao#insertStudent(com.cashedge.dao.bean.Student)
 	 */
 	public String insertStudent(Student student) {
 		try {
@@ -86,5 +88,33 @@ public class FakeStudentDaoImp implements StudentDao {
 			e.printStackTrace();
 		}
 		return null;
+	}
+
+	@Override
+	public String partialUpdate(Student student) {
+		if (student != null) {
+			int id = student.getId();
+			if (id > 0) {
+				Student s1 = this.students.get(id);
+				if (s1 != null && student != null) {
+					if (student.getCourse() != null && !s1.getCourse().equals(student.getCourse())) {
+						s1.setCourse(student.getCourse());
+						return "student course details are partially updated succussfully for student Id " + id;
+					} else if (student.getName() != null && !s1.getName().equals(student.getName())) {
+						s1.setName(student.getName());
+						return "student name details are partially updated succussfully  for student Id " + id;
+					} else {
+						return "Data is available but no student details are updated";
+					}
+
+				} else {
+					return "no student details are updated";
+				}
+			} else {
+				return "no student details are updated";
+			}
+		} else {
+			return "no student details are updated";
+		}
 	}
 }
