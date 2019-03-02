@@ -1,14 +1,12 @@
 package com.food.jpa.dao;
 
-import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.food.jpa.data.Users;
 
 /**
  * @author Suresh Sadanala
  */
-@Repository
-public interface UsersDao extends CrudRepository<Users, Long> {
-
+public interface UsersDao extends JpaRepository<Users, Long> {
+	Users findUsersByLoginName(String loginName);
 }

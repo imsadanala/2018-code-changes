@@ -1,15 +1,14 @@
 package com.food.jpa.dao;
 
-import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.food.jpa.data.FoodItems;
 
 /**
  * @author Suresh Sadanala
  */
-
-@Repository
-public interface FoodItemsDao extends CrudRepository<FoodItems, Integer> {
-
+public interface FoodItemsDao extends JpaRepository<FoodItems, Integer> {
+	List<FoodItems> findFoodItemsByItemName(String name);
 }
