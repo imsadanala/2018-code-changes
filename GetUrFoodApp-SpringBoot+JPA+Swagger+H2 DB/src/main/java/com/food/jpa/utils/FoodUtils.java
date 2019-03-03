@@ -31,7 +31,7 @@ public class FoodUtils {
 			if (!StringUtils.isEmpty(signOn) && signOn.contains("fail")) {
 				signOnResponse = new ResponseEntity<String>(signOn, HttpStatus.BAD_REQUEST);
 			} else {
-				signOnResponse = new ResponseEntity<String>(signOn, HttpStatus.OK);
+				signOnResponse = new ResponseEntity<String>(signOn, HttpStatus.CREATED);
 			}
 		} catch (Exception exception) {
 			System.err.println(METHOD_NAME + " Exception occured is " + exception.getMessage());
