@@ -1,0 +1,34 @@
+DELETE FROM USERS;
+COMMIT;
+INSERT INTO USERS VALUES(USER_ID_SEQ.NEXTVAL, 'AFirst', '', 'ALast', 'AA', 'password', 'aa.@ss.com', 1234567890, '1', 'TN', SYSDATE);
+INSERT INTO USERS VALUES(USER_ID_SEQ.NEXTVAL, 'BFirst', '', 'BLast', 'BB', 'password', 'aa.@ss.com', 1234567890, '1', 'AP', SYSDATE);
+INSERT INTO USERS VALUES(USER_ID_SEQ.NEXTVAL, 'CFirst', '', 'CLast', 'CC', 'password', 'cc.@ss.com', 1234567890, '1', 'KA', SYSDATE);
+INSERT INTO USERS VALUES(USER_ID_SEQ.NEXTVAL, 'DFirst', '', 'DLast', 'DD', 'password', 'dd.@ss.com', 1234567890, '1', 'KL', SYSDATE);
+INSERT INTO USERS VALUES(USER_ID_SEQ.NEXTVAL, 'EFirst', '', 'ELast', 'EE', 'password', 'ee.@ss.com', 1234567890, '1', 'AP', SYSDATE);
+INSERT INTO USERS VALUES(USER_ID_SEQ.NEXTVAL, 'FFirst', '', 'FLast', 'FF', 'password', 'ff.@ss.com', 1234567890, '1', 'TN', SYSDATE);
+INSERT INTO USERS VALUES(USER_ID_SEQ.NEXTVAL, 'GFirst', '', 'GLast', 'GG', 'password', 'gg.@ss.com', 1234567890, '1', 'KL', SYSDATE);
+INSERT INTO USERS VALUES(USER_ID_SEQ.NEXTVAL, 'HFirst', '', 'HLast', 'HH', 'password', 'hh.@ss.com', 1234567890, '1', 'AP', SYSDATE);
+INSERT INTO USERS VALUES(USER_ID_SEQ.NEXTVAL, 'IFirst', '', 'ILast', 'II', 'password', 'ii.@ss.com', 1234567890, '1', 'KA', SYSDATE);
+COMMIT;
+
+DELETE FROM FOOD_ITEMS;
+COMMIT;
+INSERT INTO FOOD_ITEMS VALUES (ITEM_ID_SEQ.NEXTVAL, 'Biryanis', 'Chiken', ' This is special biryani prepared with ghee', 200, 1, SYSDATE);
+INSERT INTO FOOD_ITEMS VALUES (ITEM_ID_SEQ.NEXTVAL, 'Biryanis', 'Mutton', ' This is special biryani prepared with ghee', 200, 1, SYSDATE);
+INSERT INTO FOOD_ITEMS VALUES (ITEM_ID_SEQ.NEXTVAL, 'Biryanis', 'Prawn', ' This is special biryani prepared with ghee', 200, 1, SYSDATE);
+INSERT INTO FOOD_ITEMS VALUES (ITEM_ID_SEQ.NEXTVAL, 'Biryanis', 'ChikenMogalai', ' This is special biryani prepared with ghee', 200, 1, SYSDATE);
+INSERT INTO FOOD_ITEMS VALUES (ITEM_ID_SEQ.NEXTVAL, 'Biryanis', 'MixedMogalai', ' This is special biryani prepared with ghee', 200, 1, SYSDATE);
+INSERT INTO FOOD_ITEMS VALUES (ITEM_ID_SEQ.NEXTVAL, 'Biryanis', 'Crab', ' This is special biryani prepared with ghee', 200, 1, SYSDATE);
+INSERT INTO FOOD_ITEMS VALUES (ITEM_ID_SEQ.NEXTVAL, 'Biryanis', 'Chiken65', ' This is special biryani prepared with ghee', 200, 1, SYSDATE);
+INSERT INTO FOOD_ITEMS VALUES (ITEM_ID_SEQ.NEXTVAL, 'Biryanis', 'HyderabadChiken', ' This is special biryani prepared with ghee', 200, 1, SYSDATE);
+INSERT INTO FOOD_ITEMS VALUES (ITEM_ID_SEQ.NEXTVAL, 'Biryanis', 'Panner', ' This is special biryani prepared with ghee', 155, 1, SYSDATE);
+INSERT INTO FOOD_ITEMS VALUES (ITEM_ID_SEQ.NEXTVAL, 'Biryanis', 'Ghobi', ' This is special biryani prepared with ghee', 170, 0, SYSDATE);
+INSERT INTO FOOD_ITEMS VALUES (ITEM_ID_SEQ.NEXTVAL, 'Biryanis', 'MixedVeg', ' This is special biryani prepared with ghee', 135, 1, SYSDATE);
+INSERT INTO FOOD_ITEMS VALUES (ITEM_ID_SEQ.NEXTVAL, 'Pizza', 'Panner', ' This is special pizza prepared with ghee with extra topins', 200, 1, SYSDATE);
+INSERT INTO FOOD_ITEMS VALUES (ITEM_ID_SEQ.NEXTVAL, 'Pizza', 'Mexican Green Wave', 'This is special pizza prepared with ghee with extra topins', 200, 1, SYSDATE);
+INSERT INTO FOOD_ITEMS VALUES (ITEM_ID_SEQ.NEXTVAL, 'Pizza', 'Deluxe Veggie', 'This is special pizza prepared with ghee with extra topins', 250, 1, SYSDATE);
+INSERT INTO FOOD_ITEMS VALUES (ITEM_ID_SEQ.NEXTVAL, 'Pizza', 'PepperPanner', 'This is special pizza prepared with ghee with extra topins', 220, 1, SYSDATE);
+COMMIT;
+
+DELETE FROM ORDER_DETAILS;
+COMMIT;
