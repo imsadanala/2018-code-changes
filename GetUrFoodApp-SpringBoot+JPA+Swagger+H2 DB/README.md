@@ -1,4 +1,4 @@
-This is GetUrFood SpringBoot Application with JPA+Swagger+H2 DB
+This is GetUrFood SpringBoot Application with Spring JPA Respository + Swagger+H2 DB
 
 Application can be accessed by using "http://localhost:8081/food"
 
