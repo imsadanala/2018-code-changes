@@ -13,3 +13,29 @@ has method (i.e. accepts) that accepts T type as parameter and returns void.
 has method (i.e. test) that accepts T type as parameter and returns boolean
 4. Supplier Interface
 has method ( i.e. get) that accepts no argument and returns the T type
+
+Stream 
+- is abstraction
+- a view of date how data is transformed
+- is a pipeline
+ use of stream
+ - raise the concrete collection to stream
+ - ride the stream
+ - compose the operations (i.e series of operations)
+ 
+ specialized functions
+ - filter
+ - map , mapToInt ..
+ - List, Set, Map, groupingBy
+ - sorting, sorting with comparing
+ - sum, max, min, 
+ 
+ Characteristics needs to keep in mind while working with collections
+  - sized, ordered, distinct, sorted
+ 
+ we shouldn't mutating the variable in the streams for eg, add operation in the for loop which leads to concurrency issues instead use collect(which uses the temp variable for new arraylist) that handles all
+ 
+ Reference link : https://www.youtube.com/watch?v=rVfRDLIw_Zw&t=3001s
+ 
+  
+ 
