@@ -29,6 +29,19 @@ Stream
  - List, Set, Map, groupingBy
  - sorting, sorting with comparing
  - sum, max, min, 
+  
+  Stream operations are specilized into intermediate and terminal operations,
+  
+   intermediate
+   
+   - these operations are always return new streams lazily
+   - filter , map related funcions
+   - stream.filter() doesn't actually perform any filtering but insteads creates a new stream for that, when transversed, contains the elements of the initial stream that match the given predicate. Transversal of the pipeline does begin until terminal operation of the pipeline is called/executed.
+   
+   terminal
+   
+   - foreach, sum so on related functions
+   - these operations performed, stream pipepline in consumed and no longer can be used eagerily  
  
  Characteristics needs to keep in mind while working with collections
   - sized, ordered, distinct, sorted
