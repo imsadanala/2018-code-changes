@@ -23,6 +23,9 @@ Stream
  - ride the stream
  - compose the operations (i.e series of operations)
  
+ source
+ - Stream takes Collections, Arrays, or I/O resources as input source.
+ 
  specialized functions
  - filter
  - map , mapToInt ..
