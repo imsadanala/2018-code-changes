@@ -2,9 +2,13 @@ package com.java8.streams.bean;
 
 import java.io.Serializable;
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.List;
 
+/**
+ * 
+ * @author Suresh Sadanala
+ *
+ */
 public class Person implements Serializable, Comparable<Person> {
 
 	private static final long serialVersionUID = -4013329365459857642L;
