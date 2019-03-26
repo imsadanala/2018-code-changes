@@ -1,3 +1,4 @@
+
 -> Interface which has one abstract method and multiple default and static methods is called Functional interface.
 
 -> To create a custom functional interface use  @FunctionalInterface
@@ -51,7 +52,9 @@ Stream
  
  we shouldn't mutating the variable in the streams for eg, add operation in the for loop which leads to concurrency issues instead use collect(which uses the temp variable for new arraylist) that handles all
  
- Reference link : https://www.youtube.com/watch?v=rVfRDLIw_Zw&t=3001s
+ Reference link : 
+ - https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html
+ - https://www.youtube.com/watch?v=rVfRDLIw_Zw&t=3001s
  
   
  
