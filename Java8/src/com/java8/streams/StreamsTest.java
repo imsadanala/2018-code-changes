@@ -13,7 +13,11 @@ import java.util.Set;
 import com.java8.streams.bean.Gender;
 import com.java8.streams.bean.Person;
 
-
+/**
+ * 
+ * @author suresh sadanala
+ *
+ */
 public class StreamsTest {
 	public static void main(String[] args) {
 		
